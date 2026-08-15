@@ -33,6 +33,16 @@ Después abrí `http://localhost:3000`.
 
 No hace falta agregar variables de entorno para esta versión.
 
+## Publicar en Render como sitio estático
+
+1. Creá un **Static Site** desde este repositorio.
+2. Usá `npm ci && STATIC_EXPORT=true npm run build` como comando de compilación.
+3. Usá `out` como directorio de publicación.
+4. Conectá la rama `main` para que cada cambio se publique automáticamente.
+
+La variable `STATIC_EXPORT` solo se activa durante la compilación de Render, por
+lo que la configuración existente de Railway continúa funcionando.
+
 ## Diseño adaptable
 
 La página incluye cortes responsivos para pantallas de hasta 980 px y 680 px,
